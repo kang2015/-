@@ -1,4 +1,6 @@
 //my ans
+//输入：1）葫芦街上n个房子的坐标；2）m个统计数据，每个数据包括起始b，终点e，该坐标范围（［b，e］）的下雨量w；
+//输出：每个房子的下雨量；
 #include<cstdio>
 #include<cstring>
 #include<cmath>

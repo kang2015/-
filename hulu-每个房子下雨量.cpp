@@ -45,6 +45,92 @@ int main(){
 
 //end of my ans
 
+//yz li's ans java
+package com.li.test;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Main {
+    public static void main(String args[]) throws IOException {
+    	BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+    	int N = Integer.parseInt(in.readLine());
+    	int[] houses = new int[N];
+    	String[] hc = in.readLine().split(" "); 
+    	int hh = 0;
+    	for (String ec : hc) {
+    		houses[hh++] = Integer.valueOf(ec);
+    	}
+    	int[] mome = new int[N];
+    	int M = Integer.parseInt(in.readLine());
+    	for (int rc = 0; rc < M; rc++) {
+    		String[] rains = in.readLine().split(" "); 
+    		int Li = Integer.parseInt(rains[0]);
+    		int Ri = Integer.parseInt(rains[1]);
+    		int wei = Integer.parseInt(rains[2]);
+    		int lIndex = binarySearchLeft(houses, Li);
+    		int rIndex = binarySearchRight(houses, Ri);
+    		for (int k = lIndex; k <= rIndex; k++) {
+    			mome[k] += wei;
+    		}
+    	}
+    	for (int e : mome) 
+    		System.out.println(e);
+    }
+    private static int binarySearchLeft(int[] nums, int target) {
+		if (nums == null || nums.length == 0) {
+			return -1;
+		}
+		int start = 0;
+		int end = nums.length - 1;
+		int mid;
+		while (start + 1 < end) {
+			mid = start + ((end - start) >> 1);
+			if (nums[mid] == target) {
+				return mid;
+			} else if (nums[mid] < target) {
+				start = mid;
+			} else if (nums[mid] > target) {
+				end = mid;
+			}
+		}
+		if (nums[start] >= target) {
+			return start;
+		}
+		if (nums[end] >= target) {
+			return end;
+		} else {
+			return end + 1;
+		}
+	}
+    private static int binarySearchRight(int[] nums, int target) {
+		if (nums == null || nums.length == 0) {
+			return -1;
+		}
+		int start = 0;
+		int end = nums.length - 1;
+		int mid;
+		while (start + 1 < end) {
+			mid = start + ((end - start) >> 1);
+			if (nums[mid] == target) {
+				return mid;
+			} else if (nums[mid] < target) {
+				start = mid;
+			} else if (nums[mid] > target) {
+				end = mid;
+			}
+		}
+		if (nums[end] <= target) {
+			return end;
+		}
+		if (nums[start] <= target) {
+			return start;
+		} else {
+			return start - 1;
+		}
+	}
+}
 
 

@@ -3,6 +3,13 @@
 //输出：每个房子的下雨量；
 //我的解法通过30%数据
 //线段树～
+/*测试用例*
+5
+1 3 5 7 9
+2
+2 8 5
+1 5 4
+*/
 #include<cstdio>
 #include<cstring>
 #include<cmath>

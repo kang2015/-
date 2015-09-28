@@ -1,4 +1,7 @@
 //my ans
+/**
+ * 求图中最长路径＋等差数列求和
+ * */
 #include<cstdio>
 #include<cstring>
 #include<cmath>

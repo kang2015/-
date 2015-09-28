@@ -1,4 +1,14 @@
 //my ans
+//abcdefghijkl的字典序,
+/**
+ * 输入:
+ * 2
+ * abcdefghijkl
+ * hgebkflacdji
+ * 输出：
+ * 1
+ * 302715242
+ * */
 #include<cstdio>
 #include<cstring>
 #include<cmath>

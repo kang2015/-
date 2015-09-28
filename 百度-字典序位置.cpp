@@ -1,5 +1,5 @@
 //my ans
-//abcdefghijkl的字典序,
+//abcdefghijkl的字典序,其中某个串的位置
 /**
  * 输入:
  * 2

@@ -1,4 +1,8 @@
 //my ans
+/**
+ * 汉字占两个字符，判断是否为汉字：高位字符的符号位为1
+ * 使用short（两个字节）作为key统计串a和串b中的字符数；
+ * */
 #include<cstdio>
 #include<cstring>
 #include<cmath>

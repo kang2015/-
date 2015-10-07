@@ -15,8 +15,7 @@
  * 4
  * */
 
-//时间复杂度:O(l^3)
-
+//“非线段树解法”，时间复杂度:O(l^3)
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -83,3 +82,4 @@ int main (){
 		cout << ans << endl;
 	}
 }
+//end of “非线段树解法”

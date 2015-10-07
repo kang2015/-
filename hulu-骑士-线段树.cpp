@@ -15,6 +15,8 @@
  * 4
  * */
 
+//时间复杂度:O(l^3)
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
